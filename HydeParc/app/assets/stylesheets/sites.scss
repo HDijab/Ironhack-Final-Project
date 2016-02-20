@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$banner: rgba(192, 192, 192, 1);
-$transparent_banner: rgba(192, 192, 192, 0);
+$silver: rgb(192, 192, 192);
+$gold: rgb(255, 215, 0);
+$font: Copperplate, Copperplate Gothic Light, sans-serif;
 
 body {
   background-image: url(sky.jpg);
@@ -11,9 +12,14 @@ body {
 }
 
 .jumbotron {
-  background: $banner; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient($transparent_banner, $banner, $transparent_banner); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient($transparent_banner, $banner, $transparent_banner); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient($transparent_banner, $banner, $transparent_banner); /* For Firefox 3.6 to 15 */
-  background: linear-gradient($transparent_banner, $banner, $transparent_banner); /* Standard syntax */
+  h1 {
+    color: $gold;
+    font-family: $font;
+    text-align: center;
+  }
+  background: $silver; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(transparent, $silver, transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, $silver, transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, $silver, transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, $silver, transparent); /* Standard syntax */
 }
