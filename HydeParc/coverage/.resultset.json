@@ -1,0 +1,51 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/helpers/sites_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/sites_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/users_controller.rb": [
+        0,
+        0
+      ]
+    },
+    "timestamp": 1455981883
+  }
+}
