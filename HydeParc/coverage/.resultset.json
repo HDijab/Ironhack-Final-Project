@@ -22,30 +22,34 @@
         null
       ],
       "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        null,
+        null,
+        null
       ],
       "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/sites_controller.rb": [
-        0,
-        0,
-        0,
-        0
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
       ],
       "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/users_controller.rb": [
-        0,
-        0
+        1,
+        null
       ]
     },
-    "timestamp": 1455981883
+    "timestamp": 1456134291
   }
 }
