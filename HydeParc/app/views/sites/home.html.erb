@@ -1,7 +1,23 @@
 <div class="jumbotron">
   <div class="container">
-    <h1>Hyde Parc</h1>
-<!--     link_to "Log In", new_user_session_path
-    link_to "Sign Up", new_user_registration_path
- -->  </div>
+    <div class="row">
+      <h1>Hyde Parc</h1>
+    </div>
+    <div class="row">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img alt="Brand" src="<%= asset_path( 'gate.png' ) %>" width="20px" height="20px">
+            </a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Easy Walk", easy_walk_path %></li>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Log In", new_user_session_path %></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
 </div>
