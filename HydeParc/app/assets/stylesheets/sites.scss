@@ -7,10 +7,17 @@ $green: rgb(0, 70, 0);
 $gold: rgb(250, 230, 50);
 $font: Copperplate, Copperplate Gothic Light, sans-serif;
 
+.parkImg {
+  height: 600px;
+  width: 100%;
+  background-image: url(parc_gate.jpg);
+  background-size: 100% 100%;
+}
+
 body {
   background-image: url(sky.jpg);
   background-position: center center;
-  background-size: cover;
+  background-size: cover 100%;
 }
 
 .navbar {
