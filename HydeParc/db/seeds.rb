@@ -14,3 +14,9 @@
     password_confirmation: 'testpassword'
   )
 end
+
+10.times do |variable|
+  Community.create(
+    name: Faker::Address.city
+  )
+end
