@@ -21,7 +21,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to community_post_path(@post)
     else
-      render action: :new
+      render :new
     end
   end
 
@@ -35,7 +35,7 @@ class PostsController < ApplicationController
     if @post.update_attributes(post_params)
       redirect_to community_post_path(@post)
     else
-      render action: :edit
+      render :edit
     end
   end
 

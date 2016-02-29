@@ -16,7 +16,7 @@ class CommunitiesController < ApplicationController
 
   def create
     @community = Community.new(community_params)
-    render action: :new unless @community.save
+    render :new unless @community.save
     
     @membership = CommunityMember.new(user_id: current_user.id, community_id: @community.id, role: 'creator')
 
@@ -24,7 +24,7 @@ class CommunitiesController < ApplicationController
       redirect_to community_path(@community)
     else
       @community = @community.destroy
-      render action: :new
+      render :new
     end
   end
 
@@ -38,7 +38,7 @@ class CommunitiesController < ApplicationController
     if @community.update_attributes(community_params)
       redirect_to community_path(@community)
     else
-      render action: :edit
+      render :edit
     end
   end
 
@@ -52,4 +52,7 @@ class CommunitiesController < ApplicationController
   def community_params
     params.require(:community).permit(:name)
   end
+
+  # def is_member?
+  # end
 end

@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to community_post_path(@comment.post)
     else
-      render action: :new
+      render :new
     end
   end
 
@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
     if @comment.update_attributes(comment_params)
       redirect_to community_post_path(@comment.post)
     else
-      render action: :edit
+      render :edit
     end
   end
 
