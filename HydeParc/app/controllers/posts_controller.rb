@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post.community = @community
 
     if @post.save
-      redirect_to community_post_path(community_id: @post, id: @post)
+      redirect_to community_post_path(@post)
     else
       render action: :new
     end
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
 
     if @post.update_attributes(post_params)
-      redirect_to community_post_path(community_id: @post, id: @post)
+      redirect_to community_post_path(@post)
     else
       render action: :edit
     end
