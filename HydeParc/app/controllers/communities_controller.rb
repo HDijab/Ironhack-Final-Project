@@ -52,7 +52,4 @@ class CommunitiesController < ApplicationController
   def community_params
     params.require(:community).permit(:name)
   end
-
-  # def is_member?
-  # end
 end
