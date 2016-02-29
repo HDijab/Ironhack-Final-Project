@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227174047) do
+ActiveRecord::Schema.define(version: 20160229091831) do
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "content",    null: false
+    t.integer  "user_id",    null: false
+    t.integer  "post_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["post_id"], name: "index_comments_on_post_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "communities", force: :cascade do |t|
     t.string   "name",       null: false
@@ -22,12 +33,25 @@ ActiveRecord::Schema.define(version: 20160227174047) do
   create_table "community_members", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "community_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.string   "role",         default: "", null: false
   end
 
   add_index "community_members", ["community_id"], name: "index_community_members_on_community_id"
   add_index "community_members", ["user_id"], name: "index_community_members_on_user_id"
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title",        null: false
+    t.text     "description",  null: false
+    t.integer  "user_id"
+    t.integer  "community_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "posts", ["community_id"], name: "index_posts_on_community_id"
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "nickname",               default: "", null: false
