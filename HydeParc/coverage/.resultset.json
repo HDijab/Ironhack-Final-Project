@@ -7,9 +7,25 @@
         null,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/helpers/comments_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/helpers/communities_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/helpers/posts_helper.rb": [
         1,
         null
       ],
@@ -36,8 +52,23 @@
         null,
         null
       ],
-      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/sites_controller.rb": [
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/comments_controller.rb": [
         1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
         1,
         null,
         null,
@@ -45,11 +76,108 @@
         null,
         null
       ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/communities_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/posts_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/sites_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/controllers/users_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/models/community_member.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/models/community.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/halildijab/Desktop/Ironhack/Ironhack-Final-Project/HydeParc/app/models/post.rb": [
+        1,
+        1,
         1,
         null
       ]
     },
-    "timestamp": 1456134291
+    "timestamp": 1456738145
   }
 }

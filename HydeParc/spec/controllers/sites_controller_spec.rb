@@ -7,11 +7,4 @@ RSpec.describe SitesController, type: :controller do
       expect(response).to render_template('home')
     end
   end
-
-  describe '#easy_walk' do
-    it 'renders the easy_walk template' do
-      get(:easy_walk)
-      expect(response).to render_template('easy_walk')
-    end
-  end
 end

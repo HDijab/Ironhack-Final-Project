@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update, :destroy]
 
   resources :communities do
-    resources :posts do
-      resources :comments
+    resources :posts, except: :index do
+      resources :comments, only: [:create, :update, :destroy]
     end
   end
 
