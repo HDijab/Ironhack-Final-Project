@@ -1,3 +1,79 @@
 // Place all the styles related to the sites controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$greyBorder: rgb(141, 141, 141);
+$beigeBorder: rgb(237, 203, 192);
+$textRotation: -25deg;
+
+.body {
+  background-color: black;
+  padding: 0 28px;
+  height: 100vh;
+}
+
+.page {
+  background-image: url('backgroundPage.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.components {
+  margin: 0 -28px;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.sappyShit {
+  text-align: justify;
+  margin-top: 40px;
+}
+
+.banner {
+  margin-right: 403px;
+}
+
+.link {
+  // margin-top: 40px;
+  // margin-left: 15px;
+  margin-top: -50px;
+  margin-left: 15px;
+  color: white;
+  -ms-transform: rotate($textRotation); /* IE 9 */
+  -webkit-transform: rotate($textRotation); /* Chrome, Safari, Opera */
+  transform: rotate($textRotation);
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.border {
+  background-color: white;
+  border-top: 5px solid $greyBorder;
+  border-bottom: 5px solid $greyBorder;
+}
+
+.innerBorder {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.innermostBorder {
+  border-top: 10px solid $beigeBorder;
+  border-bottom: 10px solid $beigeBorder;
+}
+
+.userOptions {
+}
+
+.imgLogo {
+  max-height: 100px;
+}

@@ -1,3 +1,28 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$centerHorizontal: calc(25% - #{18px});
+$beigeBorder: rgb(237, 203, 192);
+
+.image {
+  margin: 20px $centerHorizontal;
+  height: 200px;
+  width: 200px;
+}
+
+.profile {
+  padding-top: 10px;
+}
+
+.imageSection {
+}
+
+.profileSection {
+}
+
+.communitySection {
+  border: 10px inset $beigeBorder;
+  padding: 0px 10px;
+  background-color: rgba(237, 203, 192, 0.25);
+}
