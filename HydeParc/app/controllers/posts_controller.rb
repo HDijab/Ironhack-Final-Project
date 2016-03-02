@@ -3,8 +3,10 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @poster = User.find(@post)
+    @community = Community.find(@post)
     @new_comment = Comment.new
-    @comments = @post.comments
+    @comments = @post.comments.reverse
   end
 
   def new

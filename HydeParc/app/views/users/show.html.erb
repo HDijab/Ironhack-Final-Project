@@ -3,10 +3,10 @@
     <%= render partial: "shared/top_banner", locals: {title: "Welcome, #{@user.nickname}!"} %>
   </div>
   <div class="row profile">
-    <section class="col-xs-3 imageSection">
+    <section class="col-xs-3">
       <%= image_tag "placeholder.jpg", class:"image" %>
     </section>
-    <section class="col-xs-5 profileSection">
+    <section class="col-xs-5">
       <h2>About Me</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aperiam quos iusto, dolorum aspernatur deleniti iste tenetur eligendi, minus dolore officia iure cupiditate quidem nobis quaerat veniam. Quo, officiis, facilis.
@@ -15,14 +15,21 @@
       </p>
     </section>
     <section class="col-xs-4">
-      <div class="communitySection">
-        <h2>Current Communites:</h2>
-        <ul>
-          <% @user.communities.each do |community| %>
-            <li><%= link_to "#{community.name}", community_path(community) %></li>
-          <% end %>
-        </ul>
-      </div>
+      <h2>Current Communites:</h2>
+      <ul class="list-unstyled scrollable">
+        <% @user.communities.each do |community| %>
+          <li class="container-fluid list-item">
+            <div class="row">
+              <div class="col-xs-2">
+                <a href=<%= "/communities/#{community.id}" %>> <%= image_tag "placholderCommunity.png", class:"thumb" %> </a>
+              </div>
+              <div class="col-xs-10">
+                <p> <strong> <%= community.name %> </strong> </p>
+              </div>
+            </div>
+          </li>
+        <% end %>
+      </ul>
     </section>
   </div>
 </div>
