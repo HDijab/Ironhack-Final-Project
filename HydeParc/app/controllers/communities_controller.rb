@@ -1,9 +1,5 @@
 class CommunitiesController < ApplicationController
-  before_action :authenticate_user!, except: :index
-  
-  def index
-    @communities = Community.all
-  end
+  before_action :authenticate_user!
 
   def show
     @community = Community.find(params[:id])
@@ -50,6 +46,6 @@ class CommunitiesController < ApplicationController
   private
 
   def community_params
-    params.require(:community).permit(:name)
+    params.require(:community).permit(:name, :about)
   end
 end

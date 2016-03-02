@@ -16,7 +16,7 @@
     </section>
     <section class="col-xs-offset-1 col-xs-8">
       <h2>Comments:</h2>
-      <ul class="list-unstyled scrollable">
+      <ul class="list-unstyled scrollable comments">
         <% @comments.each do |comment| %>
         <li class="container-fluid list-item">
           <div class="row">
@@ -37,6 +37,21 @@
         </li>
         <% end %>
       </ul>
+      <div class="container-fluid">
+        <div class="row">
+          <%= form_for @new_comment, url: community_post_comments_path(community_id: @community.id, post_id: @post.id), method: :post do |f| %>
+          <div class="col-xs-1">
+            <%= f.label :content, 'Comment' %>
+          </div>
+          <div class="col-xs-9">
+            <%= f.text_area :content %>
+          </div>
+          <div class="col-xs-1">
+            <%= f.submit %>
+          </div>
+          <% end %>
+        </div>
+      </div>
     </section>
   </div>
 </div>

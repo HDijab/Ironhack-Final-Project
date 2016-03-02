@@ -2,7 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.thumb{
+.thumb {
   height: 50px;
   width: 50px;
+}
+
+.changeImg {
+  height: 100px;
+  width: 100px;  
+}
+
+.create {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 10px inset rgb(237, 203, 192);
+  background-color: rgba(237, 203, 192, 0.25);
+  height: 550px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.nameWidth {
+  width: 100%;
+}
+
+.aboutWidth {
+  height: 200px;
+  resize: none;
+  overflow: auto;
+  width: 100%;
+}
+
+.nudgeChangeButton {
+  margin-top: 35px;
 }

@@ -9,9 +9,9 @@ class CommentsController < ApplicationController
     @comment.post = @post
     
     if @comment.save
-      redirect_to community_post_path(@comment.post)
+      redirect_to community_post_path(community_id: @comment.post.community_id, id: @comment.post.id)
     else
-      render :new
+      redirect_to community_post_path(community_id: @comment.post.community_id, id: @comment.post.id)
     end
   end
 
@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
 
     if @comment.update_attributes(comment_params)
-      redirect_to community_post_path(@comment.post)
+      redirect_to community_post_path(community_id: @comment.post.community_id, id: @comment.post.id)
     else
       render :edit
     end

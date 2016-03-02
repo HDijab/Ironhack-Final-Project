@@ -1,0 +1,93 @@
+<div class="container-fluid">
+  <div class="row">
+    <%= render partial: "shared/top_banner", locals: {title: "Edit Profile"} %>
+  </div>
+  <div class="row profile">
+    <section class="col-xs-offset-2 col-xs-8 create">
+      <div class="row">
+        <div class="col-xs-2">
+          <%= image_tag "placeholder.jpg", class:"changeImg" %>
+        </div>
+        <div class="col-xs-10 nudgeChangeButton">
+          <%= button_tag "Change profile picture"%>
+        </div>
+      </div>
+      <div class="row profile">
+        <%= form_for @user do |f| %>
+          <div class="col-xs-12">
+            <%= f.label :nickname %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :nickname, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :first_name %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :first_name, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :last_name %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :last_name, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :telephone %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :telephone, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :city %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :city, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :country %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :country, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :address %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :address, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :gender %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :gender_male, "Male" %>
+            <%= radio_button_tag :gender, "male" %>
+            <%= f.label :gender_female, "Female" %>
+            <%= radio_button_tag :gender, "female" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :date_of_birth %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.date_field :date_of_birth, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :occupation %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :occupation, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :about %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_area :about, class: "aboutWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.submit %>
+          </div>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>
