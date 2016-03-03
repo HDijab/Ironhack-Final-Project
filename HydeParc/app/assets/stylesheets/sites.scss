@@ -40,8 +40,6 @@ $textRotation: -25deg;
 }
 
 .link {
-  // margin-top: 40px;
-  // margin-left: 15px;
   margin-top: -50px;
   margin-left: 15px;
   color: white;
@@ -71,7 +69,28 @@ $textRotation: -25deg;
   border-bottom: 10px solid $beigeBorder;
 }
 
+.home {
+  margin-top: 30px;
+  text-align: right;
+}
+
 .userOptions {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.userLink {
+  color: black;
+}
+
+.userLink:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.userLink:focus {
+  text-decoration: none;
+  color: black;
 }
 
 .imgLogo {

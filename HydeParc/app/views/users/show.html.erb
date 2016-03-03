@@ -12,11 +12,51 @@
     </section>
     <section class="col-xs-5">
       <h2>Profile</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aperiam quos iusto, dolorum aspernatur deleniti iste tenetur eligendi, minus dolore officia iure cupiditate quidem nobis quaerat veniam. Quo, officiis, facilis.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nam quos officiis laborum sit perspiciatis et odio, voluptatem amet eius? Alias vitae eveniet ipsum architecto numquam reprehenderit sed exercitationem quasi!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aut beatae deleniti eveniet, laudantium veritatis earum dolore, illo. Dolore, odio at vitae, quod aliquam fuga. Nostrum recusandae ratione, rem iusto.
-      </p>
+      <div class="row profile">
+        <div class="col-xs-12">
+          <span> First Name: </span>
+          <span> <%= @user.first_name %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> Last Name: </span>
+          <span> <%= @user.last_name %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> Telephone: </span>
+          <span> <%= @user.telephone %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> City: </span>
+          <span> <%= @user.city %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> Country: </span>
+          <span> <%= @user.country %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> Address: </span>
+          <span> <%= @user.address %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> Gender: </span>
+          <span> <%= @user.gender %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> Date Of Birth: </span>
+          <span> <%= @user.date_of_birth %> </span>
+          <% if @age %>
+            <span> (<%= @age %>) </span>
+          <% end %>
+        </div>
+        <div class="col-xs-12">
+          <span> Occupation: </span>
+          <span> <%= @user.occupation %> </span>
+        </div>
+        <div class="col-xs-12">
+          <span> About: </span>
+          <span> <%= @user.about %> </span>
+        </div>
+      </div>
     </section>
     <section class="col-xs-4">
       <h2>Current Communites:</h2>
@@ -29,6 +69,9 @@
               </div>
               <div class="col-xs-10">
                 <p> <strong> <%= community.name %> </strong> </p>
+              </div>
+              <div class="col-xs-10">
+                <p> <strong class="text-capitalize"> <%= community.community_members.first.role %> </strong> </p>
               </div>
             </div>
           </li>

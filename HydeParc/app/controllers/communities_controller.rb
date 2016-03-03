@@ -1,6 +1,10 @@
 class CommunitiesController < ApplicationController
   before_action :authenticate_user!
 
+  def index
+    @communities = Community.all
+  end
+
   def show
     @community = Community.find(params[:id])
     @posts = @community.posts.reverse

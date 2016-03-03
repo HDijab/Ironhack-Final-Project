@@ -6,19 +6,45 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create(
-  nickname: 'Halil',
-  email: 'halil@example.com',
-  password: 'testpassword',
-  password_confirmation: 'testpassword'
-)
+10.times do
+  User.create(
+    nickname: Faker::Name.first_name,
+    email: Faker::Internet.safe_email,
+    password: 'testpassword',
+    password_confirmation: 'testpassword'
+  )  
+end
 
-Community.create(
-  name: 'Doha',
-)
+3.times do
+  Community.create(
+  name: Faker::Address.city,
+  about: Faker::Lorem.paragraph
+  )
+end
 
-CommunityMember.create(
-  user_id: 1,
-  community_id: 1,
-  role: 'Member'
-)
+10.times do |i|
+  CommunityMember.create(
+    user_id: i + 1,
+    community_id: 1,
+    role: 'member'
+  )
+end
+
+5.times do |i|
+  Post.create(
+    user_id: i + 1,
+    community_id: 1,
+    title: Faker::Lorem.sentence,
+    description: Faker::Lorem.paragraph
+  )
+end
+
+5.times do |i|
+  3.times do |j|
+    Comment.create(
+      user_id: j + 1,
+      post_id: i + 1,
+      content: Faker::Lorem.sentence
+    )
+  end
+end

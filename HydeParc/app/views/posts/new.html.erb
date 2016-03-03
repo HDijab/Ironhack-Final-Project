@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+    <%= render partial: "shared/top_banner", locals: {title: "Create Post"} %>
+  </div>
+  <div class="row profile">
+    <section class="col-xs-offset-2 col-xs-8 create">
+      <div class="row">
+        <div class="col-xs-12">
+          <%= image_tag "placeholder.jpg", class:"changeImg" %>
+        </div>
+      </div>
+      <div class="row profile">
+        <%= form_for @post, url: community_posts_path, method: :post do |f| %>
+          <div class="col-xs-12">
+            <%= f.label :title %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_field :title, class: "nameWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.label :description %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.text_area :description, class: "aboutWidth" %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.submit %>
+          </div>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>

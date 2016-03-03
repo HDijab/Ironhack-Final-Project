@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :users, except: [:new, :create, :index]
 
-  resources :communities, except: :index do
+  resources :communities do
     resources :posts, except: :index do
       resources :comments, only: [:create, :update, :destroy]
     end

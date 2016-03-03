@@ -3,8 +3,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @poster = User.find(@post)
-    @community = Community.find(@post)
+    @poster = @post.user
+    @community = @post.community
     @new_comment = Comment.new
     @comments = @post.comments.reverse
   end
@@ -21,7 +21,7 @@ class PostsController < ApplicationController
     @post.community = @community
 
     if @post.save
-      redirect_to community_post_path(@post)
+      redirect_to community_path(id: @post.community)
     else
       render :new
     end
