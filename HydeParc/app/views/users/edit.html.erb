@@ -60,10 +60,10 @@
             <%= f.label :gender %>
           </div>
           <div class="col-xs-12">
+            <%= f.radio_button :gender, "Male" %>
             <%= f.label :gender_male, "Male" %>
-            <%= radio_button_tag :gender, "male" %>
+            <%= f.radio_button :gender, "Female" %>
             <%= f.label :gender_female, "Female" %>
-            <%= radio_button_tag :gender, "female" %>
           </div>
           <div class="col-xs-12">
             <%= f.label :date_of_birth %>

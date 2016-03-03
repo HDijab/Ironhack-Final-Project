@@ -40,8 +40,9 @@ $textRotation: -25deg;
 }
 
 .link {
-  margin-top: -50px;
-  margin-left: 15px;
+  font-size: 20px;
+  margin-top: -80px;
+  margin-left: 110px;
   color: white;
   -ms-transform: rotate($textRotation); /* IE 9 */
   -webkit-transform: rotate($textRotation); /* Chrome, Safari, Opera */
@@ -95,4 +96,10 @@ $textRotation: -25deg;
 
 .imgLogo {
   max-height: 100px;
+}
+
+.arrowImg {
+  max-height: 150px;
+  min-height: 150px;
+  margin-left: 75px;
 }

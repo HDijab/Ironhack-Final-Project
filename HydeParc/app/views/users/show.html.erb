@@ -14,47 +14,46 @@
       <h2>Profile</h2>
       <div class="row profile">
         <div class="col-xs-12">
-          <span> First Name: </span>
-          <span> <%= @user.first_name %> </span>
+          <span class="userLabel"> First Name: </span>
+          <span class="userInfo"> <%= @user.first_name %> </span>
         </div>
         <div class="col-xs-12">
-          <span> Last Name: </span>
-          <span> <%= @user.last_name %> </span>
+          <span class="userLabel"> Last Name: </span>
+          <span class="userInfo"> <%= @user.last_name %> </span>
         </div>
         <div class="col-xs-12">
-          <span> Telephone: </span>
-          <span> <%= @user.telephone %> </span>
+          <span class="userLabel"> Telephone: </span>
+          <span class="userInfo"> <%= @user.telephone %> </span>
         </div>
         <div class="col-xs-12">
-          <span> City: </span>
-          <span> <%= @user.city %> </span>
+          <span class="userLabel"> City: </span>
+          <span class="userInfo"> <%= @user.city %> </span>
         </div>
         <div class="col-xs-12">
-          <span> Country: </span>
-          <span> <%= @user.country %> </span>
+          <span class="userLabel"> Country: </span>
+          <span class="userInfo"> <%= @user.country %> </span>
         </div>
         <div class="col-xs-12">
-          <span> Address: </span>
-          <span> <%= @user.address %> </span>
+          <span class="userLabel"> Address: </span>
+          <span class="userInfo"> <%= @user.address %> </span>
         </div>
         <div class="col-xs-12">
-          <span> Gender: </span>
-          <span> <%= @user.gender %> </span>
+          <span class="userLabel"> Gender: </span>
+          <span class="userInfo"> <%= @user.gender %> </span>
         </div>
         <div class="col-xs-12">
-          <span> Date Of Birth: </span>
-          <span> <%= @user.date_of_birth %> </span>
-          <% if @age %>
-            <span> (<%= @age %>) </span>
+          <span class="userLabel"> Date Of Birth: </span>
+          <% if @user.date_of_birth %> 
+            <span class="userInfo"> <%= "#{@user.date_of_birth} (#{@age})" %> </span>
           <% end %>
         </div>
         <div class="col-xs-12">
-          <span> Occupation: </span>
-          <span> <%= @user.occupation %> </span>
+          <span class="userLabel"> Occupation: </span>
+          <span class="userInfo"> <%= @user.occupation %> </span>
         </div>
         <div class="col-xs-12">
-          <span> About: </span>
-          <span> <%= @user.about %> </span>
+          <span class="userLabel"> About: </span>
+          <span class="userInfo"> <%= @user.about %> </span>
         </div>
       </div>
     </section>
